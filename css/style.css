@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Merienda+One&display=swap');
+
+:root {
+  --primary-color: #f5e050;
+  --dark-grey: #6b7280;
+  --light-grey: #e5e7eb;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* background-image: url(/images/bg-image.jpg); */
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
+    url(/images/bg-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.navigation {
+  background-color: rgb(34, 34, 34);
+  text-align: center;
+  color: var(--primary-color);
+  padding: 0.1rem;
+  margin: 0rem;
+}
+
+.navigation .nav-brand {
+  font-size: 2rem;
+  /* font-weight: bold; */
+  font-family: 'Merienda One', cursive;
+}
+
+.main-content {
+  text-align: center;
+  /* margin-top: 1rem; */
+  padding: 2rem;
+  font-family: 'Merienda One', cursive;
+}
+
+.main-content h2 {
+  display: block;
+  background-color: var(--primary-color);
+  color: black;
+  max-width: 15rem;
+  margin: auto;
+  padding: 0.8rem;
+  border: black solid 3px;
+  border-radius: 2rem;
+  margin-bottom: 1rem;
+}
+
+.btn-primary {
+  display: block;
+  margin: auto;
+  color: var(--primary-color);
+  background-color: rgb(34, 34, 34);
+  font-size: 1.2rem;
+  padding: 1rem;
+  border-radius: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border: none;
+  outline: none;
+  font-family: 'Bungee Inline', cursive;
+}
+
+.btn-primary:hover {
+  background-color: #36331c;
+}
+
+.main-content textarea {
+  height: 80px;
+  width: 350px;
+  border: black solid 4px;
+  padding: 0.8rem;
+  outline: none;
+  font-family: 'Merienda One', cursive;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .navigation .nav-brand {
+    font-size: 4rem;
+  }
+
+  .main-content h2 {
+    font-size: 4rem;
+    padding: 2rem;
+    max-width: 400px;
+  }
+
+  .main-content textarea {
+    width: 430px;
+    font-size: 1rem;
+    height: 200px;
+  }
+
+  .btn-primary {
+    font-size: 4rem;
+    padding: 2rem;
+    border-radius: 3rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navigation .nav-brand {
+    font-size: 2rem;
+  }
+
+  .main-content {
+    margin-top: 0.2rem;
+  }
+
+  .main-content h2 {
+    font-size: 2rem;
+    padding: 1rem;
+    max-width: 200px;
+  }
+
+  .main-content textarea {
+    width: 330px;
+    font-size: 1.2rem;
+    height: 80px;
+  }
+
+  .btn-primary {
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-radius: 3rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navigation .nav-brand {
+    font-size: 2rem;
+  }
+
+  .main-content {
+    margin-top: 0.2rem;
+  }
+
+  .main-content h2 {
+    font-size: 2rem;
+    padding: 1rem;
+    max-width: 200px;
+  }
+
+  .main-content textarea {
+    width: 230px;
+    font-size: 2rem;
+    height: 80px;
+  }
+
+  .btn-primary {
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-radius: 3rem;
+  }
+}
